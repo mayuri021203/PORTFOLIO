@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayuri's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Mayuri Gote</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="modeToggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" data-aos="fade-down">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="videos/background.mp4" type="video/mp4" />
+      Your browser doesn't support HTML5 video.
+    </video>
+    <div class="home-content">
+      <h2>Hello, I'm Mayuri</h2>
+      <p>Web Developer | AI & Data Science Student</p>
+      <a href="#contact" class="btn">Contact Me</a>
+      <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </section>
+
+  <section id="about" data-aos="slide-up">
+    <h2>About Me</h2>
+    <p>I am currently pursuing a degree in Artificial Intelligence and Data Science. I enjoy building web applications and learning new technologies.</p>
+    <img src="https://up.yimg.com/ib/th?id=OIP.oL_mrXPl2aO0OredJZTZkwHaHa&pid=Api&rs=1&c=1&qlt=95&w=104&h=104" alt="Mayuri's Photo" />
+  </section>
+
+  <section id="projects" data-aos="zoom-in">
+    <h2 data-aos="fade-left">Projects</h2>
+    <div class="project" data-aos="flip-left">
+      <h3>To-Do List App</h3>
+      <p>A simple web app to manage daily tasks using HTML, CSS, and JavaScript.</p>
+    </div>
+    <div class="project" data-aos="flip-left">
+      <h3>Weather App</h3>
+      <p>Real-time weather app using OpenWeatherMap API.</p>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-right">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>R</li>
+    </ul>
+  </section>
+
+  <section id="contact" data-aos="flip-up">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p>Email: mayurigote@example.com</p>
+    <p>LinkedIn: linkedin.com/in/mayurigote</p>
+    <p>GitHub: github.com/mayurigote</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mayuri Gote. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
